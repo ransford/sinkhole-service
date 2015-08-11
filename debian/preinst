@@ -1,0 +1,4 @@
+#!/bin/sh
+if [ -e /etc/init.d/sinkhole-service ]; then
+	/etc/init.d/sinkhole-service stop || true
+fi

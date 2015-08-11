@@ -1,0 +1,12 @@
+Source: sinkhole-service
+Section: custom
+Priority: optional
+Maintainer: ben@ransford.org
+Build-Depends: debhelper
+
+Package: sinkhole-service
+Architecture: all
+Essential: no
+Pre-Depends: netcat-openbsd
+Homepage: https://github.com/ransford/sinkhole-service/
+Description: TCP sinkhole service

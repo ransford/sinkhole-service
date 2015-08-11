@@ -1,0 +1,3 @@
+#!/bin/sh
+/usr/sbin/update-rc.d -f sinkhole-service defaults
+/etc/init.d/sinkhole-service start
