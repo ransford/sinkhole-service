@@ -1,4 +1,4 @@
 # Packaging
 
     $ $EDITOR debian/changelog
-    $ dpkg-buildpackage -S -us -uc -I.git
+    $ dpkg-buildpackage -us -uc -I.git
