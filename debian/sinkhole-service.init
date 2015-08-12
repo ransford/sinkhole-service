@@ -14,7 +14,7 @@
 
 # PATH should only include /usr/* if it runs after the mountnfs.sh script
 PATH=/sbin:/usr/sbin:/bin:/usr/bin
-DESC="Description of the service"
+DESC="TCP sinkhole service"
 NAME=sinkhole-service
 DAEMON=/bin/nc
 PIDFILE=/var/run/$NAME.pid
@@ -65,7 +65,7 @@ do_stop()
 	#   2 if daemon could not be stopped
 	#   other if a failure occurred
 	start-stop-daemon --stop --quiet --retry=TERM/30/KILL/5 --user nobody \
-		--pidfile $PIDFILE --name $NAME
+		--pidfile $PIDFILE
 	RETVAL="$?"
 	[ "$RETVAL" = 2 ] && return 2
 	# Wait for children to finish too if this is a daemon that forks
