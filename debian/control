@@ -2,10 +2,10 @@ Source: sinkhole-service
 Section: custom
 Priority: optional
 Maintainer: ben@ransford.org
-Build-Depends: debhelper
+Build-Depends: debhelper, build-essential
 
 Package: sinkhole-service
-Architecture: all
+Architecture: armhf
 Essential: no
 Pre-Depends: netcat-openbsd
 Homepage: https://github.com/ransford/sinkhole-service/

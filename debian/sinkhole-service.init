@@ -16,7 +16,7 @@
 PATH=/sbin:/usr/sbin:/bin:/usr/bin
 DESC="TCP sinkhole service"
 NAME=sinkhole-service
-DAEMON=/bin/nc
+DAEMON=/usr/sbin/sinkhole
 PIDFILE=/var/run/$NAME.pid
 SCRIPTNAME=/etc/init.d/$NAME
 
@@ -26,7 +26,7 @@ SCRIPTNAME=/etc/init.d/$NAME
 # Read configuration variable file if it is present
 [ -r /etc/default/$NAME ] && . /etc/default/$NAME
 SINKHOLE_PORT=${SINKHOLE_PORT:-12345}
-DAEMON_ARGS="-kl ${SINKHOLE_PORT}"
+DAEMON_ARGS="${SINKHOLE_PORT}"
 
 # Load the VERBOSE setting and other rcS variables
 . /lib/init/vars.sh
