@@ -16,7 +16,7 @@
 PATH=/sbin:/usr/sbin:/bin:/usr/bin
 DESC="TCP sinkhole service"
 NAME=sinkhole-service
-DAEMON=/usr/sbin/sinkhole
+DAEMON=/usr/bin/sinkhole
 PIDFILE=/var/run/$NAME.pid
 SCRIPTNAME=/etc/init.d/$NAME
 
